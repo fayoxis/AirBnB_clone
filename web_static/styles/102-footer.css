@@ -1,13 +1,21 @@
 footer {
+  background-color: #FFF;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   clear: left;
   height: 60px;
   width: 100%;
   border-top: 1px solid #CCCCCC;
   display: flex;
-  background-color: #FFF;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
 }
 
 footer p {
@@ -24,10 +32,3 @@ footer p {
 
 }
 
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 992px) {
-
-}
