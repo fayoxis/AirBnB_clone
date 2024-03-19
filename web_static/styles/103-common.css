@@ -2,33 +2,33 @@
 body {
 	font-size: 14px;
 	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  width: 100%;
-  color: #484848;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+        width: 100%;
+        color: #484848;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 }
 span {
 	color: #000000;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  margin: 2rem auto;
+        display: flex;
+        margin: 2rem auto;
+        flex-direction: column;
+        flex-grow: 1;
 }
 
 *{
 	margin: 0;
 	padding: 0;
+	border: none;
 	list-style: none;
 	text-decoration: none;
-	border: none;
 	outline: none;
 }
 
 html {
-  box-sizing: border-box;
+         box-sizing: border-box;
 }
 .container {
 	z-index: 0;
