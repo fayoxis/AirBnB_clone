@@ -1,168 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AirBnB clone</title>
-		<link rel="stylesheet" href="./styles/4-common.css">
-		<link rel="stylesheet" href="./styles/3-footer.css">
-		<link rel="stylesheet" href="./styles/3-header.css">
-    <link rel="stylesheet" href="./styles/6-filters.css">
-    <link rel="stylesheet" href="./styles/100-places.css">
-    <link rel="icon" href="images/icon.png">
-	</head>
-	<body>
-		<header></header>
-    <div class="page-container">
-      <div class="container">
-        <section class="filters">
-          <div class="locations">
-            <h3>States</h3>
-            <h4>California, Arizona...</h4>
-            <div class="popover">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles/4-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+    <link rel="stylesheet" href="styles/6-filters.css">
+    <link rel="stylesheet" href="styles/100-places.css">
+    <title>AirBnB_Clone-master </title>
+  </head>
+  <body>
+    <header>
+    </header>
+    <div class="container">
+      <section class="filters">
+        <div class="locations">
+          <h3>States</h3>
+          <h4>California, Arizona...</h4>
+          <ul class="popover">
+            <li><h2>Arizona:</h2>
               <ul>
-                <li><h2>Arizona</h2>
-                  <ul>
-                    <li>Phoenix</li>
-                    <li>Tuscon</li>
-                  </ul>
-                </li>
-                <li><h2>California</h2>
-                  <ul>
-                    <li>San Fransisco</li>
-                    <li>Los Altos</li>
-                  </ul>
-                </li>
+                <li>Page</li>
+                <li>Page2</li>
               </ul>
-            </div>
+            </li>
+            <li><h2>California:</h2>
+              <ul>
+                <li>San Francisco</li>
+                <li>Los Altos</li>
+              </ul>
+            </li>
+            </ul>
+        </div>
+        <div class="amenities">
+          <h3>Amenities</h3>
+          <h4>Internet, Kitchen...</h4>
+          <ul class="popover">
+            <li>Internet</li>
+            <li>Tv</li>
+            <li>Kitchen</li>
+            <li>Iron</li>
+          </ul>
+        </div>
+        <button type="button" name="button">Search</button>
+      </section>
+
+
+      <section class="places">
+        <h1>Places</h1>
+        <article>
+          <div class="article_places_header">
+            <h2>My home</h2>
+            <div class="price_by_night">$80</div>
+          </div>
+          <div class="information">
+            <div class="max_guest">2 Guests</div>
+            <div class="number_rooms">1 Bedroom</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div><!-- end information -->
+          <div class="user">
+            <p><b>Owner:</b> John Lennon</p>
+          </div><!-- end user -->
+          <div class="description">
+            <p>This is a lovely 1 bedroom and 1 bathroom apartment that can <br>
+		  accomodate 2 people. It is located at the center of Shanghai <br> 
+		  and next to subway line 1, 1 stop to People Square, 2 stops <br>
+		  to Bund, and 3 stops to Jingan Temple.</p>
           </div>
           <div class="amenities">
-            <h3>Amenities</h3>
-            <h4>Internet, Kitchen...</h4>
-            <div class="popover">
-              <ul>
-                <li>Internet</li>
-                <li>TV</li>
-                <li>Kitchen</li>
-                <li>Games</li>
-              </ul>
-            </div>
-          </div>
-          <button>Search</button>
-        </section>
-        <section class="places">
-          <h1>Places</h1>
-          <article>
-            <h2>My home</h2>
-            <div class="price_by_night"><p>$299</p></div>
-            <div class="information">
-              <div class="max_guest"><span>6 Guests</span></div>
-              <div class="number_rooms"><span>3 Bedrooms</span></div>
-              <div class="number_bathrooms"><span>2 Bathrooms</span></div>
-            </div>
-            <div class="user">
-              <b>Owner</b>: Cristiano Ronaldo
-            </div>
-            <div class="description">
-              Choose between having breakfast sitting by the natural wood breakfast bar, or up on the rooftop deck, enjoying the sunshine. This classy loft boasts open-plan living, with exposed brickwork and stunning artwork. An ideal base to explore Chicago.            </div>
-            <div class="amenities">
-              <h2>Amenities</h2>
-              <ul>
-                <li class="tv_">TV</li>
-                <li class="wifi_">Wifi</li>
-                <li class="pets_">Pets friendly</li>
-              </ul>
-            </div>
-            <div class="reviews">
-              <h2>2 Reviews</h2>
-              <ul>
-                <li>
-                  <h3>From Shane McCutcheon the 27th January 2017</h3>
-                  <p>Runshi is an epic host. Nothing more I can say. 5 star!</p>
-                </li>
-                <li>
-                  <h3>From Randolph Bell the 4th January 2017</h3>
-                  <p>Very clean place considering I'm a surgeon and a clean OR is a must!</p>
-                </li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <h2>Tiny house</h2>
-            <div class="price_by_night"><p>$179</p></div>
-            <div class="information">
-              <div class="max_guest"><span>2 Guests</span></div>
-              <div class="number_rooms"><span>1 Bedroom</span></div>
-              <div class="number_bathrooms"><span>1 Bathroom</span></div>
-            </div>
-            <div class="user">
-              <b>Owner</b>: Sutton Brady
-            </div>
-            <div class="description">
-              Admire the view of St. Peter’s from the sunlit patio of this elegant studio apartment. The home boasts a crisp, contemporary feel while still feeling comfortable and inviting. Enjoy a convenient kitchenette, breakfast nook, and soothing soaking tub.            </div>
-            <div class="amenities">
-              <h2>Amenities</h2>
-              <ul>
-                <li class="tv_">TV</li>
-                <li class="wifi_">Wifi</li>
-                <li class="pets_">Pets friendly</li>
-              </ul>
-            </div>
-            <div class="reviews">
-              <h2>2 Reviews</h2>
-              <ul>
-                <li>
-                  <h3>From Mr. Walsh the 27th January 2017</h3>
-                  <p>Excellent! Nothing more I can say. 5 star!</p>
-                </li>
-                <li>
-                  <h3>From AJ Austin the 4th January 2017</h3>
-                  <p>Highly recommended!</p>
-                </li>
-              </ul>
-            </div>
-          </article>
-          <article>
-            <h2>A suite</h2>
-            <div class="price_by_night"><p>$149</p></div>
-            <div class="information">
-              <div class="max_guest"><span>2 Guests</span></div>
-              <div class="number_rooms"><span>1 Bedroom</span></div>
-              <div class="number_bathrooms"><span>1 Bathroom</span></div>
-            </div>
-            <div class="user">
-              <b>Owner</b>: Richard Hunter
-            </div>
-            <div class="description">
-              Enjoy the elegance of a by-gone era while staying in this Art Deco home. Beautifully decorated and featuring a sweeping staircase, original stained-glass windows, period furniture, and a stunningly unique black-and-white tiled bathroom.            </div>
-            <div class="amenities">
             <h2>Amenities</h2>
             <ul>
-              <li class="tv_">TV</li>
-              <li class="pets_">Pets friendly</li>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
             </ul>
           </div>
           <div class="reviews">
-            <h2>3 Reviews</h2>
+            <h2>2 Reviews</h2>
             <ul>
               <li>
-                <h3>From Alice Pieszecki the 20th January 2017</h3>
-                <p>I had an awesome experience!</p>
+                <h3>From Bob Dylan the 27th january , 2017</h3>
+                <p>Runshi is an epic host. Nothing more i can say. 5 star!</p>
               </li>
               <li>
-                <h3>From Dr. Voss the 10th February 2017</h3>
-                <p>Why not!?</p>
-              </li>
-              <li>
-                <h3>From Barrette Cain the 21th May 2017</h3>
-                <p>Very clean place!</p>
+                <h3>From Connor 4th  january , 2017</h3>
+                <p>Higly recommended!</p>
               </li>
             </ul>
           </div>
-          </article>
+        </article>
+
+        <article>
+          <h2>Tiny house</h2>
+          <div class="price_by_night">$65</div>
+          <div class="information">
+            <div class="max_guest">4 Guests</div>
+            <div class="number_rooms">2 Bedrooms</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b> Addrienne</p>
+          </div>
+          <div class="description">
+            <p>Our place is a private, affordable stand-alone guest house<br>
+		  centrally located just minutes to French Quarters, downtown,<br>
+		  the Fair Grounds(Jazz Fest) and City Park. The guest house is<br>
+		  a quaint, 400 square ft. with a full bath, mini kitchen, & living<br>
+		  room. The extra high ceilings make the home feel more<br>
+		  spacious. The sofa converts to a bed also. We have a hand<br>
+		  made counter area that adds character to the room and a<br>
+		  great proch/deck to relax on and have a glass of Merlot.</p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Max the 27th january , 2017</h3>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h2>A suite</h2>
+          <div class="price_by_night">$190</div>
+          <div class="information">
+            <div class="max_guest">6 Guests</div>
+            <div class="number_rooms">3 Bedroom</div>
+            <div class="number_bathrooms">2 Bathroom</div>
+          </div>
+          <div class="user">
+            <p><b>Owner:</b>bill Zuckerberg</p>
+          </div>
+          <div class="description">
+            <p>newly renovated spacious 2 bedrooms 2 baths in cozy<br>
+		    gastown style unit with the view of North shore mountains<br>
+		    Woodward's landmark Building situated at the Historic heart of<br>
+		    vancouver.
+	    </p>
+          </div>
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Ara  27th january , 2017</h3>
+                <p>this place. Amazing!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
         </section>
-      </div>
-      <footer>
+    </div>
+    <footer>
         <p>Best School</p>
       </footer>
     </div>
