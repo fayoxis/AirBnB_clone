@@ -37,32 +37,30 @@ def __print_stderr(msg):
     sys.stderr.write(msg)
 
 
-def __analyse_html(file_path):
-    """it Starts to analyse of HTML file
+def validate_file(file_path, file_type):
     """
-    h = {'Content-Type': "text/html; charset=utf-8"}
-    d = open(file_path, "rb").read()
-    u = "https://validator.w3.org/nu/?out=json"
-    r = requests.post(u, headers=h, data=d)
-    res = []
-    messages = r.json().get('messages', [])
-    for m in messages:
-        res.append("[{}:{}] {}".format(file_path, m['lastLine'], m['message']))
-    return res
-
-
-def __analyse_css(file_path):
-    """it definetly Starts to analyse of CSS file
+    it will Start to validation of files
     """
-    d = {'output': "json"}
-    f = {'file': (file_path, open(file_path, 'rb'), 'text/css')}
-    u = "http://jigsaw.w3.org/css-validator/validator"
-    r = requests.post(u, data=d, files=f)
-    res = []
-    errors = r.json().get('cssvalidation', {}).get('errors', [])
-    for e in errors:
-        res.append("[{}:{}] {}".format(file_path, e['line'], e['message']))
-    return res
+    headers = {'Content-Type': "{}; charset=utf-8".format(file_type)}
+    # Open files in binary mode:
+    # https://requests.readthedocs.io/en/master/user/advanced/
+    data = open(file_path, "rb").read()
+    url = "https://validator.w3.org/nu/?out=json"
+    response = requests.post(url, headers=headers, data=data)
+
+    if not response.status_code < 400:
+        raise ConnectionError("Unable to connect to API endpoint.")
+
+    result = []
+    messages = response.json().get('messages', [])
+    for message in messages:
+        # Capture files that have incomplete or broken HTML
+        if message['type'] == 'error' or message['type'] == 'info':
+            result.append("'{}' => {}".format(file_path, message['message']))
+        else:
+            result.append("[{}:{}] {}".format(
+                file_path, message['lastLine'], message['message']))
+    return result
 
 
 def __analyse(file_path):
