@@ -6,13 +6,15 @@ body {
   font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+body .page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
 body .container {
   max-width: 1000px;
   margin:30px auto;
   padding-bottom: 3.75rem;
 }
 
-body .page-container {
-  position: relative;
-  min-height: 100vh;
-}
+
