@@ -3,18 +3,13 @@ html {
   box-sizing: border-box;
 }
 
-
-@media only screen and (min-width: 600px) {
-
-}
-
 *{
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	text-decoration: none;
 	border: none;
 	outline: none;
+	text-decoration: none;
 }
 @media only screen and (min-width: 768px) {
 
@@ -30,21 +25,27 @@ html {
 
 
 body {
-  z-index: 0;
-	font-size: 14px;
+        width: 100%;
+        color: #484848;
+        z-index: 0;
+        font-size: 14px;
 	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  width: 100%;
-  color: #484848;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 }
+
+
+@media only screen and (min-width: 600px) {
+
+}
+
 span {
 	color: #000000;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  margin: 2rem auto;
+       display: flex;
+       flex-direction: column;
+       flex-grow: 1;
+       margin: 2rem auto;
 }
