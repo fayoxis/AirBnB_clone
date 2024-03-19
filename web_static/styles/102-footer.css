@@ -1,15 +1,4 @@
-footer {
-  background-color: #FFF;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  clear: left;
-  height: 60px;
-  width: 100%;
-  border-top: 1px solid #CCCCCC;
-  display: flex;
 
-}
 @media only screen and (min-width: 768px) {
 
 }
@@ -21,6 +10,18 @@ footer {
 footer p {
   color: #484848;
   text-align: center;
+}
+footer {
+  background-color: #FFF;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clear: left;
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid #CCCCCC;
+  display: flex;
+
 }
 
 
