@@ -56,3 +56,91 @@ html {
 		margin: 0 auto;
 	}
 }
+
+
+.mobile_nav {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.main_nav_burguer {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.main_nav_check {
+  display: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav_bar_level1 > li {
+  position: relative;
+}
+
+.nav_bar_level1 label {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav_bar_level1 ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f0f0f0;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav_bar_level1 input[type="checkbox"]:checked ~ ul {
+  display: block;
+}
+
+.nav_bar_level1 ul li {
+  padding: 5px;
+}
+
+
+.nav_bar_level1 label span {
+  display: block;
+}
+
+
+.nav_bar_level1 input[type="checkbox"] {
+  position: absolute;
+  top: -9999px;
+}
+
+.nav_bar_level1 label[for="second_check"],
+.nav_bar_level1 label[for="third_check"] {
+  position: relative;
+}
+
+.nav_bar_level1 label[for="second_check"]::before,
+.nav_bar_level1 label[for="third_check"]::before {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 10px;
+}
+
+.nav_bar_level1 input[type="checkbox"]:checked ~ label[for="second_check"]::before,
+.nav_bar_level1 input[type="checkbox"]:checked ~ label[for="third_check"]::before {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.nav_bar_level1 ul ul {
+  top: 0;
+  left: 100%;
+}
